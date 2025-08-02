@@ -42,7 +42,7 @@ This pet-project is deeply inspired by the article [[N. Balagansky, I. Maksimov,
 git clone https://github.com/your-user/clustering-sae-project.git
 cd clustering-sae-project
 ```
-2. Create & activate env:
+2. Activate environment:
 ```bash
 conda env create -f environment.yml
 conda activate clustering-sae
@@ -70,8 +70,8 @@ python -m src.visualization.evolution_of_clusters_sae_plots
 - All auxiliary modules are in the folder src/ (clustering, coactivation study, SAE Match, cluster evolution via SAE Match and via optimal transport), in the folder /src/visualization there are all modules for visualization.
 
 - There are two files in the notebooks folder: 
-    - composite-analysis.ipynb sequentially calls the necessary modules, makes calculations and writes the results to the results folder, and also contains a discussion of the calculations and conclusions from the results
-    - theory.ipynb contains the cell markdown with all the necessary theory and formulas
+    - **composite-analysis.ipynb** sequentially calls the necessary modules, makes calculations and writes the results to the results folder, and also contains a discussion of the calculations and conclusions from the results
+    - **theory.ipynb** contains the cell markdown with all the necessary theory and formulas
 
 ```
 clustering-sae-project/
@@ -89,7 +89,6 @@ clustering-sae-project/
 │   ├── metrics_for_cluster_evolution.py  # H / MI diagnostics
 │   ├── sae_match.py            # k-NN + MinCostFlow matching
 │   ├── sae_v5_32k.py
-│   ├── utils.py                # misc helpers (logging, seeding, paths)
 │   └── visualization/          # plotting helpers
 │       ├── additional_pictures.py
 │       ├── cluster_plots.py
@@ -119,11 +118,11 @@ clustering-sae-project/
 
 ## Example Flows
 
-**Evolution L5 → L6 (OT):**  
-![Optimal transport clusters evolution](assets/images/flow_l5_l6.png)
+**Optimal transport clusters evolution:**  
+![Optimal transport clusters evolution](images_for_readme/flow_l5_l6.png)
 
-**Evolution L8 → L9 (SAE-Match):**  
-![SAE Match clusters evolution](assets/images/flow_l8_l9.png)
+**SAE Match clusters evolution:**  
+![SAE Match clusters evolution](images_for_readme/flow_l8_l9.png)
 
 ---
 
@@ -206,5 +205,4 @@ All code has been tuned for this baseline setup; any machine meeting or exceedin
 
 ## Contact
 
-rusalev.timofey@gmail.com
-Timofei Rusalev, Moscow, Russia
+rusalev.timofey@gmail.com, Timofei Rusalev, Moscow, Russia
