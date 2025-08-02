@@ -1,0 +1,21 @@
+# system
+.DS_Store
+Thumbs.db
+
+# python
+__pycache__/
+*.py[cod]
+*.so
+
+# virtual envs
+env/
+.venv/
+*.egg-info/
+
+# jupyter
+.ipynb_checkpoints/
+
+# large artifacts
+/checkpoints/
+/results/
+/data/gpt2-small-res_post_32k-oai/

@@ -1,0 +1,34 @@
+name: clustering-sae
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.9
+
+  - numpy>=1.21
+  - scipy
+  - pandas
+  - scikit-learn
+
+  - pytorch=2.7.1
+  - cudatoolkit=11.8
+
+  - umap-learn
+  - hdbscan
+  - ortools
+
+  - matplotlib
+  - seaborn
+  - tqdm
+  - networkx
+
+  - ipykernel
+  - jupyterlab
+
+  - pip
+  - pip:
+      - sentence-transformers
+      - transformer-lens
+      - datasets
