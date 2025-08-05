@@ -193,7 +193,7 @@ Optimal Transport yields a *more realistic* evolution of clusters. SAE-Match’s
 
 ---
 
-Ideas related in one way or another to the clustering of CAE features are presented in the articles:
+Ideas related in one way or another to the clustering of SAE features are presented in the articles:
 
 - Engels, Joshua, et al., "Not all language model features are one-dimensionally linear", arXiv preprint arXiv:2405.14860 (2024).
 - Lan, Michael, et al., "Sparse autoencoders reveal universal feature spaces across large language models", arXiv preprint arXiv:2410.06981 (2024).
