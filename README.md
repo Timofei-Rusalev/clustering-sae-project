@@ -1,6 +1,9 @@
 # Cluster Evolution of SAE Features Across Layers
 
-This research-oriented pet-project investigates sparse autoencoders (SAE v5‑32k) trained on all 12 layers of pre-trained gpt-2 small. Feature clustering is performed using UMAP + HDBSCAN on both the columns of SAE decoder matrices and on embedding representations of SAE feature descriptions sourced from Neuronpedia. SAE Match is implemented for both decoder columns and text embedding, allowing for layer-by-layer cluster evolution analysis. Additionally, an alternative cluster evolution approach based on optimal transport is developed and evaluated.
+- Built a research pipeline for sparse autoencoders (SAE v5-32k) across all 12 layers of GPT-2 small, applying UMAP + HDBSCAN clustering to both decoder columns and feature text embeddings (generated via SBERT all-mpnet-base-v2 on Neuronpedia descriptions).
+- Applied two cluster-evolution methods, i) SAE Match for individual feature alignments and ii) optimal transport, to evaluate concept evolution in both decoder-column and text-embedding spaces.
+- Metrics: assessed cluster evolution via merge, split, leak and survival rates; quantified information-theoretic dynamics using entropy and mutual information of cluster transitions; measured monosemanticity with NPMI and Jaccard co-activation scores on OpenWebText tokens; evaluated overall clustering quality using Silhouette score, cosine similarity, and Davies–Bouldin index. 
+- \textbf{Key findings:} i) three-phase concept evolution (Fragmentation → Consolidation → Specialization),  ii) text-description embeddings outperform decoder columns, iii) optimal transport outperforms SAE Match.
 
 ---
 
