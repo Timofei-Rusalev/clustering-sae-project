@@ -1,9 +1,9 @@
 # Cluster Evolution of SAE Features Across Layers
 
-- Built a research pipeline for sparse autoencoders (SAE v5-32k) across all 12 layers of GPT-2 small, applying UMAP + HDBSCAN clustering to both decoder columns and feature text embeddings (generated via SBERT all-mpnet-base-v2 on Neuronpedia descriptions).
+- Built a research pipeline for sparse autoencoders (SAE v5-32k) across all 12 layers of GPT-2 small, applying UMAP + HDBSCAN **clustering** to both decoder columns and feature text embeddings (generated via SBERT all-mpnet-base-v2 on Neuronpedia descriptions).
 - Applied two cluster-evolution methods, i) SAE Match for individual feature alignments and ii) optimal transport, to evaluate concept evolution in both decoder-column and text-embedding spaces.
-- Metrics: assessed cluster evolution via merge, split, leak and survival rates; quantified information-theoretic dynamics using entropy and mutual information of cluster transitions; measured monosemanticity with NPMI and Jaccard co-activation scores on OpenWebText tokens; evaluated overall clustering quality using Silhouette score, cosine similarity, and Davies–Bouldin index. 
-- \textbf{Key findings:} i) three-phase concept evolution (Fragmentation → Consolidation → Specialization),  ii) text-description embeddings outperform decoder columns, iii) optimal transport outperforms SAE Match.
+- **Metrics**: assessed cluster evolution via merge, split, leak and survival rates; quantified information-theoretic dynamics using entropy and mutual information of cluster transitions; measured monosemanticity with NPMI and Jaccard co-activation scores on OpenWebText tokens; evaluated overall clustering quality using Silhouette score, cosine similarity, and Davies–Bouldin index. 
+- **Key findings**: i) three-phase concept evolution (Fragmentation → Consolidation → Specialization),  ii) text-description embeddings outperform decoder columns, iii) optimal transport outperforms SAE Match.
 
 ---
 
