@@ -3,7 +3,7 @@
 - Built a research pipeline for sparse autoencoders (SAE v5-32k) across all 12 layers of GPT-2 small, applying UMAP + HDBSCAN **clustering** to both decoder columns and feature text embeddings (generated via SBERT all-mpnet-base-v2 on Neuronpedia descriptions).
 - Applied two cluster-evolution methods, i) SAE Match for individual feature alignments and ii) optimal transport, to evaluate concept evolution in both decoder-column and text-embedding spaces.
 - **Metrics**: assessed cluster evolution via merge, split, leak and survival rates; quantified information-theoretic dynamics using entropy and mutual information of cluster transitions; measured monosemanticity with NPMI and Jaccard co-activation scores on OpenWebText tokens; evaluated overall clustering quality using Silhouette score, cosine similarity, and Davies–Bouldin index. 
-- **Key findings**: i) three-phase concept evolution (Fragmentation → Consolidation → Specialization),  ii) text-description embeddings outperform decoder columns, iii) optimal transport outperforms SAE Match.
+- **Key findings**: i) three-phase concept evolution (Fragmentation → Consolidation → Specialization),  ii) text-description embeddings outperform decoder columns, iii) optimal transport seems to be a more expressive evolution of clusters than SAE Match.
 
 ---
 
@@ -191,6 +191,18 @@ Optimal Transport yields a *more realistic* evolution of clusters. SAE-Match’s
    *Why*: Sheds light on how the model shifts its internal resources, loses old knowledge, and develops new skills.  
    *Prototype*: Capture cluster evolution trajectories with Optimal Transport for the baseline and multiple checkpoints (e.g., 10%, 50%, 100%), and measure changes in cluster sizes, the emergence and disappearance of clusters, and overall split/merge dynamics.
 
+---
+
+Ideas related in one way or another to the clustering of CAE features are presented in the articles:
+
+- Engels, Joshua, et al., "Not all language model features are one-dimensionally linear", arXiv preprint arXiv:2405.14860 (2024).
+- Lan, Michael, et al., "Sparse autoencoders reveal universal feature spaces across large language models", arXiv preprint arXiv:2410.06981 (2024).
+- Li, Yuxiao, et al., "The geometry of concepts: Sparse autoencoder feature structure", Entropy 27.4 (2025): 344.
+- Xu, Yang, et al., "Tracking the feature dynamics in llm training: A mechanistic study", arXiv preprint arXiv:2412.17626 (2024).
+
+The approach and results presented in this repository project do not have significant overlap with these works and represent a new separate result.
+
+---
 
 ## Hardware & Software Prerequisites
 
